@@ -8,7 +8,7 @@ There are three parts to this tutorial.  The first part is written is the jupyte
 
 The second part os the tutorial works builds an Extended Kalman Filter (EKF) that fuses LIDAR and RADAR data supplied in the Udacity Self-driving Car Term 1 project name obj_pose-laser-radar-synthetic-input.txt.  Three notebooks are provided for LIDAR, RADAR and Fusion.  These are: a) LIDAR-Only.ipynb, b) RADAR-Only.ipynb and c) RADAR-LIDAR-Combined.ipynb.  
 
-Finally, the third part of this tutorial is a C++ version of the LIDAR and RADAR fusion that works with the Udacity Simulator (see immediately below).  The code is stored in one cpp program main.cpp.  The third part requires compilation using make.  The code was written in C++11 with Make 3.81 as required by Udacity. 
+Finally, the third part of this tutorial is a C++ version of the LIDAR and RADAR fusion that works with the Udacity Simulator (see immediately below).  The code is stored in one cpp program main.cpp.  The third part requires compilation using make.  The code was written in C++11 with Make 3.81 as required by Udacity.  A jupyter notebook PlotExtendedKalmanErrors.ipynb is provided that can be used to see the errors over iterations.
 
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases).
 

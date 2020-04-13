@@ -2,11 +2,11 @@
 
 # Extended Kalman Filter Project
 
-The goal of this project is to learn to apply the kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower than the tolerance outlined in the project rubric. 
+The goal of this project is to apply the kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. 
 
-There are three parts to this tutorial.  The first part is written is the jupyter notebook named Kalman-Tutorial.ipynb.  This notebook is based on Dr. Michal van Biezen's multipart Youtube tutorial https://www.youtube.com/user/ilectureonline.  The notebook was meant to mirror his calculations of the basic linear Kalman Filter.  The same model is developed in C++ Kalman-Tutorial.cpp.  The cpp file can be compiled directly in GNU g++ Kalman-Tutoria.cpp -o Kalman-Tutorial and then run with ./Kalman-Tutorial.
+There are three parts to this tutorial.  The first part is written is the jupyter notebook named Kalman-Tutorial.ipynb.  This notebook is based on Dr. Michal van Biezen's multipart Youtube tutorial https://www.youtube.com/user/ilectureonline.  The notebook was meant to mirror his calculations of the basic linear Kalman Filter.  The same model is developed in C++ as `Kalman-Tutorial.cpp`.  The cpp file can be compiled directly in GNU g++ Kalman-Tutoria.cpp -o Kalman-Tutorial and then run with ./Kalman-Tutorial.
 
-The second part os the tutorial works builds an Extended Kalman Filter (EKF) that fuses LIDAR and RADAR data supplied in the Udacity Self-driving Car Term 1 project.  The file is named obj_pose-laser-radar-synthetic-input.txt.  Three notebooks are provided for LIDAR, RADAR and Fusion.  These are: a) LIDAR-Only.ipynb, b) RADAR-Only.ipynb and c) RADAR-LIDAR-Combined.ipynb.  
+The second part os the tutorial builds an Extended Kalman Filter (EKF) that fuses LIDAR and RADAR data supplied in the Udacity Self-driving Car Term 1 project.  The file is named obj_pose-laser-radar-synthetic-input.txt.  Three notebooks are provided for LIDAR, RADAR and Fusion.  These are: a) LIDAR-Only.ipynb, b) RADAR-Only.ipynb and c) RADAR-LIDAR-Combined.ipynb.  
 
 Finally, the third part of this tutorial is a C++ version of the LIDAR and RADAR fusion that works with the Udacity Simulator (see immediately below).  The code is stored in one cpp program main.cpp.  The third part requires compilation using make.  The code was written in C++11 with Make 3.81 as required by Udacity.  A jupyter notebook PlotExtendedKalmanErrors.ipynb is provided that can be used to see the errors over iterations.
 
@@ -66,69 +66,5 @@ Here is the main protocol that main.cpp uses for uWebSocketIO in communicating w
    * On windows, you may need to run: `cmake .. -G "Unix Makefiles" && make`
 4. Run it: `./ExtendedKF `
 
-## Editor Settings
 
-We've purposefully kept editor configuration files out of this repo in order to
-keep it as simple and environment agnostic as possible. However, we recommend
-using the following settings:
-
-* indent using spaces
-* set tab width to 2 spaces (keeps the matrices in source code aligned)
-
-## Code Style
-
-Please (do your best to) stick to [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html).
-
-## Generating Additional Data
-
-This is optional!
-
-If you'd like to generate your own radar and lidar data, see the
-[utilities repo](https://github.com/udacity/CarND-Mercedes-SF-Utilities) for
-Matlab scripts that can generate additional data.
-
-## Project Instructions and Rubric
-
-Note: regardless of the changes you make, your project must be buildable using
-cmake and make!
-
-More information is only accessible by people who are already enrolled in Term 2 (three-term version) or Term 1 (two-term version)
-of CarND. If you are enrolled, see the Project Resources page in the classroom
-for instructions and the project rubric.
-
-## Hints and Tips!
-
-* You don't have to follow this directory structure, but if you do, your work
-  will span all of the .cpp files here. Keep an eye out for TODOs.
-* Students have reported rapid expansion of log files when using the term 2 simulator.  This appears to be associated with not being connected to uWebSockets.  If this does occur,  please make sure you are conneted to uWebSockets. The following workaround may also be effective at preventing large log files.
-
-    + create an empty log file
-    + remove write permissions so that the simulator can't write to log
- * Please note that the ```Eigen``` library does not initialize ```VectorXd``` or ```MatrixXd``` objects with zeros upon creation.
-
-## Call for IDE Profiles Pull Requests
-
-Help your fellow students!
-
-We decided to create Makefiles with cmake to keep this project as platform
-agnostic as possible. Similarly, we omitted IDE profiles in order to ensure
-that students don't feel pressured to use one IDE or another.
-
-However! We'd love to help people get up and running with their IDEs of choice.
-If you've created a profile for an IDE that you think other students would
-appreciate, we'd love to have you add the requisite profile files and
-instructions to ide_profiles/. For example if you wanted to add a VS Code
-profile, you'd add:
-
-* /ide_profiles/vscode/.vscode
-* /ide_profiles/vscode/README.md
-
-The README should explain what the profile does, how to take advantage of it,
-and how to install it.
-
-Regardless of the IDE used, every submitted project must
-still be compilable with cmake and make.
-
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
